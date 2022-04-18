@@ -1,0 +1,45 @@
+
+@media  (min-width: 0px) and (max-width: 767px) {
+
+    .contenedortestimonios{
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:  minmax(100px, auto);
+       
+      }
+      
+      .contenedortexto{
+        margin-bottom: 10%;
+        margin-top: 10%;
+        
+      }
+
+      footer {
+        background-color: black;
+        height: auto;
+        width: 1200px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-top: 20px;
+        color: rgb(21, 88, 88);
+        
+        
+        }
+        
+        .footercontainer {
+         display: inline-block;
+         height: 100px;
+        
+        }
+  
+        .derechosfooter {
+       
+          display: inline-block;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          
+      }
+        
+
+    }

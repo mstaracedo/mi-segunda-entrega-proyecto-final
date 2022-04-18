@@ -1,0 +1,173 @@
+
+
+@import "variables";
+
+
+/* pagina testimonios*/
+
+body{
+    background-color: $color-de-fondo;
+    font-family: $fuente-secundaria;
+    max-height: 1000vh;
+    min-width: 1000px;
+}
+
+h1{
+ color: $color-titulo;
+ font: $fuente-titulo;
+}
+
+.titulos{
+    color: $color-titulo;
+    font-family: $fuente-titulo;
+    text-align: center;
+    font-size: $fuente-altura;
+    animation: text 2s 1;
+  
+  }
+  
+  @keyframes text {
+    0% {
+      color: white;
+      letter-spacing: 25px;
+    }
+   
+  }
+
+  .navbar {
+
+    font-size: 20px;
+      
+  }
+
+  ul {    
+    list-style:none;
+    font-size: $fuente-altura-link;
+    padding: 0cm;
+    margin-top: 5%;
+
+      li{
+        display:inline-block;
+        width: 10%;
+        padding:5px 10px;
+        background-color: $color-link;
+        border:1px solid #000;
+        text-align:center;
+        color: $color-de-fondo;
+
+          &:hover{
+            
+                background-color: $color-titulo;
+                color: $color-de-fondo;
+            
+                 
+      
+            a {
+            font-size: 14px;
+            text-align: center;
+            color: $color-de-fondo;
+            padding: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $fuente-secundaria;
+    
+       }
+     }
+  }
+}
+
+
+.contenedortestimonios{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  minmax(100px, auto);
+    gap: 1em;
+    margin-top: 5%;
+  }
+  
+  .contenedortexto{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  
+  .textoparrafo{
+  
+    text-align: center;
+    font: $texto-altura;
+    color: $color-de-parrafo;
+    
+  }
+  .imagentest{
+    width: 50px;
+    height: 50px;
+    margin-top: 1%;
+    
+  }
+  
+  .gridtextoparrafo2 {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+  
+  }
+
+  footer {
+    background-color: $color-fondo-footer;
+    height: auto;
+    width: 100vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 20px;
+    color: $color-letra-footer;
+    margin-top: 5%;
+    
+    
+    }
+    
+    .footercontainer {
+     display:grid;
+     grid-template-columns: 33% 33% 33%;
+     justify-items: center;
+     align-content: center;
+     height: 100px;
+    }
+    
+  
+    .divfooter{
+  
+      height: 70px;
+     
+    }
+    
+    .derechosfooter {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    
+    .imgchica {
+      
+        width: 20px;
+        padding: 5px;
+       
+        
+    }
+    
+  
+    .letrasfooter {
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+        color: $color-letra-footer;
+        text-transform: uppercase;
+        font: $letra-footer;
+        text-decoration:none
+        
+    
+    }
+  
+    @import "media";

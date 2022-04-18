@@ -1,0 +1,137 @@
+/* pagina testimonios*/
+body {
+  background-color: #111;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  max-height: 1000vh;
+  min-width: 1000px; }
+
+h1 {
+  color: white;
+  font: Arial, Helvetica, sans-serif; }
+
+.titulos {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  animation: text 2s 1; }
+
+@keyframes text {
+  0% {
+    color: white;
+    letter-spacing: 25px; } }
+
+.navbar {
+  font-size: 20px; }
+
+ul {
+  list-style: none;
+  font-size: 15px;
+  padding: 0cm;
+  margin-top: 5%; }
+  ul li {
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+    background-color: #aaa;
+    border: 1px solid #000;
+    text-align: center;
+    color: #111; }
+    ul li:hover {
+      background-color: white;
+      color: #111; }
+      ul li:hover a {
+        font-size: 14px;
+        text-align: center;
+        color: #111;
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+
+.contenedortestimonios {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: minmax(100px, auto);
+  gap: 1em;
+  margin-top: 5%; }
+
+.contenedortexto {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+.textoparrafo {
+  text-align: center;
+  font: 30px;
+  color: #c1cdda; }
+
+.imagentest {
+  width: 50px;
+  height: 50px;
+  margin-top: 1%; }
+
+.gridtextoparrafo2 {
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px; }
+
+footer {
+  background-color: black;
+  height: auto;
+  width: 100vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 20px;
+  color: #145757;
+  margin-top: 5%; }
+
+.footercontainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+  align-content: center;
+  height: 100px; }
+
+.divfooter {
+  height: 70px; }
+
+.derechosfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.imgchica {
+  width: 20px;
+  padding: 5px; }
+
+.letrasfooter {
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #145757;
+  text-transform: uppercase;
+  font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-decoration: none; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .contenedortestimonios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(100px, auto); }
+  .contenedortexto {
+    margin-bottom: 10%;
+    margin-top: 10%; }
+  footer {
+    background-color: black;
+    height: auto;
+    width: 1200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 20px;
+    color: #155858; }
+  .footercontainer {
+    display: inline-block;
+    height: 100px; }
+  .derechosfooter {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; } }
